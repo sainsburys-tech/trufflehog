@@ -440,6 +440,7 @@ import (
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/nozbeteams"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/npmtoken"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/npmtokenv2"
+	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/npmtokenluna"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/nugetapikey"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/numverify"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/nutritionix"
@@ -1505,6 +1506,7 @@ func DefaultDetectors() []detectors.Detector {
 		digitaloceanv2.Scanner{},
 		npmtoken.Scanner{},
 		npmtokenv2.Scanner{},
+		npmtokenluna.Scanner{},
 		sqlserver.Scanner{},
 		redis.Scanner{},
 		ftp.Scanner{},
